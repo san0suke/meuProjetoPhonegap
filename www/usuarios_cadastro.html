@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-<script src="library/jquery/jquery-1.11.2.min.js"></script>
-<script src="js/sistema/default_head.js"></script>
-<script src="js/usuarios_cadastro.js"></script>
-</head>
+    <head>
+        <script src="library/jquery/jquery-1.11.2.min.js"></script>
+        <script src="js/sistema/default_head.js"></script>
+        <script src="js/usuarios_cadastro.js"></script>
+    </head>
 
-<body>
-	<div id="wrapper">
+    <body>
+        <div id="wrapper">
 
-		<div id="page-wrapper">
-			<div id="page-inner">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="page-header">
-							<script>
-								text(txt.usuarios_cadastro_titulo)
-							</script>
-						</h1>
-					</div>
-				</div>
-				<!-- /. ROW  -->
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<script>
-									text(txt.informacoes_cadastrais)
-								</script>
-							</div>
-							<div class="panel-body">
-								<div class="row">
-									<form id="form" class="validator" >
-										<input type="hidden" name="a" value="usuarios" />
-										<input type="hidden" name="b" value="cadastro" />
-										<div class="col-lg-6">
-											<div class="form-group">
-												<label><script>text(txt.login)</script></label> <input type="text" class="form-control"
-													id="usu_login" name="usu_login" required/>
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="form-group">
-												<label id="lbl_senha" for="usu_senha"><script>text(txt.senha)</script></label> <input
-													id="usu_senha" autocomplete="off" type="password"
-													class="form-control" name="usu_senha"
-													placeholder="**********" required />
-											</div>
-											<div class="form-group">
-												<label id="lbl_confirmar_senha" for="confirm_usu_senha">
-													<script>text(txt.confirmar_senha)</script></label> <input id="confirm_usu_senha" type="password"
-													class="form-control" placeholder="**********" equalTo="#usu_senha"
-													autocomplete="off" required />
-											</div>
-											<button type="submit" class="btn btn-primary submit_btn"></button>
-											<button type="reset" class="btn btn-default limpar_btn"></button>
-										</div>
-									</form>
-									<!-- /.col-lg-6 (nested) -->
-								</div>
-								<!-- /.row (nested) -->
-							</div>
-							<!-- /.panel-body -->
-						</div>
-						<!-- /.panel -->
-					</div>
-					<!-- /.col-lg-12 -->
-				</div>
-			</div>
-			<!-- /. PAGE INNER  -->
-		</div>
-		<!-- /. PAGE WRAPPER  -->
-	</div>
-	<!-- /. WRAPPER  -->
-</body>
+            <div id="page-wrapper">
+                <div id="page-inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="page-header">
+                                <script>
+                                    text(txt.usuarios_cadastro_titulo)
+                                </script>
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- /. ROW  -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <script>
+                                        text(txt.informacoes_cadastrais)
+                                    </script>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <form id="form" class="validator" >
+                                            <input type="hidden" name="a" value="usuarios" />
+                                            <input type="hidden" name="b" value="cadastro" />
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label><script>text(txt.login)</script></label> <input type="text" class="form-control"
+                                                                                                           id="usu_login" name="usu_login" required/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label id="lbl_senha" for="usu_senha"><script>text(txt.senha)</script></label> <input
+                                                        id="usu_senha" autocomplete="off" type="password"
+                                                        class="form-control" name="usu_senha"
+                                                        placeholder="**********" required />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label id="lbl_confirmar_senha" for="confirm_usu_senha">
+                                                        <script>text(txt.confirmar_senha)</script></label> <input id="confirm_usu_senha" type="password"
+                                                                                                              class="form-control" placeholder="**********" equalTo="#usu_senha"
+                                                                                                              autocomplete="off" required />
+                                                </div>
+                                                <button type="submit" class="btn btn-primary submit_btn"></button>
+                                                <button type="reset" class="btn btn-default limpar_btn"></button>
+                                            </div>
+                                        </form>
+                                        <!-- /.col-lg-6 (nested) -->
+                                    </div>
+                                    <!-- /.row (nested) -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                </div>
+                <!-- /. PAGE INNER  -->
+            </div>
+            <!-- /. PAGE WRAPPER  -->
+        </div>
+        <!-- /. WRAPPER  -->
+    </body>
 
 </html>

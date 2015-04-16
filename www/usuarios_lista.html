@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <script src="library/jquery/jquery-1.11.2.min.js"></script>
+        <script src="js/sistema/default_head.js"></script>
+        <script src="js/usuarios_lista.js"></script>
+        <script src="js/sistema/table-load.js"></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <div id="page-wrapper">
+                <div id="page-inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="page-header">
+                                <script>
+                                    text(txt.usuarios_lista_titulo);
+                                </script>
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- /. ROW  -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Advanced Tables -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                     Advanced Tables
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table table-striped table-bordered table-hover ui-responsive ui-table-reflow" id="dataTables-example" data-mode="reflow" data-role="table">
+                                        <thead>
+                                            <tr>
+                                                <th data-priority="1" data-colstart="1">Rank</th>
+                                                <th data-priority="persist" data-colstart="2">Movie Title</th>
+                                                <th data-priority="2" data-colstart="3">Year</th>
+                                                <th data-priority="3" data-colstart="4"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+                                                <th data-priority="4" data-colstart="5">Reviews</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank:</b>1</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/Citizen_Kane" class="ui-link">Citizen Kane</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1941</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>100%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>74</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>2</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/Casablanca_(film)" class="ui-link">Casablanca</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1942</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>97%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>64</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>3</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/The_Godfather" class="ui-link">The Godfather</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1972</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>97%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>87</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>4</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" class="ui-link">Gone with the Wind</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1939</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>96%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>87</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>5</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" class="ui-link">Lawrence of Arabia</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1962</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>94%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>87</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>6</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/Dr._Strangelove" class="ui-link">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1964</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>92%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>74</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>7</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/The_Graduate" class="ui-link">The Graduate</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1967</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>91%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>122</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>8</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" class="ui-link">The Wizard of Oz</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1939</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>90%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>72</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>9</th>
+                                                <td><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" class="ui-link">Singin' in the Rain</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>1952</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>89%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>85</td>
+                                            </tr>
+                                            <tr>
+                                                <th><b class="ui-table-cell-label">Rank</b>10</th>
+                                                <td class="title"><b class="ui-table-cell-label">Movie Title</b><a data-rel="external" href="http://en.wikipedia.org/wiki/Inception" class="ui-link">Inception</a></td>
+                                                <td><b class="ui-table-cell-label">Year</b>2010</td>
+                                                <td><b class="ui-table-cell-label">Rotten Tomato Rating</b>84%</td>
+                                                <td><b class="ui-table-cell-label">Reviews</b>78</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                </div>
+                <!-- /. PAGE INNER  -->
+            </div>
+            <!-- /. PAGE WRAPPER  -->
+        </div>
+        <!-- /. WRAPPER  -->
+    </body>
+
+</html>
