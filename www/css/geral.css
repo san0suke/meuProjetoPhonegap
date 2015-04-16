@@ -58,3 +58,6 @@ label.error {
     border-top: 0 none;
     padding-right: 17px;
 }
+.ui-table-reflow tbody tr:first-child th:first-child {
+    margin-top: 0;
+}

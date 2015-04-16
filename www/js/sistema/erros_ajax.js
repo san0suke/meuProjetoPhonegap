@@ -7,6 +7,7 @@ function getMensagemErro(codErro) {
 	listaErros[5] = txt.login_ja_cadastrado;
 	listaErros[6] = txt.falha_registrar_token;
 	listaErros[7] = txt.falha_cadastrar;
+	listaErros[8] = txt.token_nao_recebido;
 	if(listaErros[codErro] != undefined) {
 		return listaErros[codErro];
 	} else {
