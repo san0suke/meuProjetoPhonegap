@@ -1,3 +1,3 @@
-$(function() {
-	$(".validator").validate();
+$(function () {
+    $(".validator").validate();
 });
