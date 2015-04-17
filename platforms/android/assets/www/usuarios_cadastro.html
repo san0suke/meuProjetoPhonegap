@@ -6,19 +6,13 @@
         <script src="js/sistema/default_head.js"></script>
         <script src="js/usuarios_cadastro.js"></script>
     </head>
-
     <body>
         <div id="wrapper">
-
             <div id="page-wrapper">
                 <div id="page-inner">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="page-header">
-                                <script>
-                                    text(txt.usuarios_cadastro_titulo)
-                                </script>
-                            </h1>
+                            <h1 id="titulo_pagina" class="page-header"></h1>
                         </div>
                     </div>
                     <!-- /. ROW  -->
@@ -34,7 +28,7 @@
                                     <div class="row">
                                         <form id="form" class="validator" >
                                             <input type="hidden" name="a" value="usuarios" />
-                                            <input type="hidden" name="b" value="cadastro" />
+                                            <input id="b" type="hidden" name="b" value="cadastro" />
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label><script>text(txt.login)</script></label> <input type="text" class="form-control"

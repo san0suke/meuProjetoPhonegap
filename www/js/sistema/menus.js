@@ -47,6 +47,7 @@ function menu_esquerda_load(conteudo) {
 function adicionar_traducao() {
     $("#cadastros_btn").append(txt.cadastros);
     $("#usuarios_btn").append(txt.usuarios);
-    $(".novo_btn").append(txt.novo);
+//    $(".novo_btn").append(txt.novo);
     $(".listar_btn").append(txt.listar);
+    $(".cadastro_btn").append(txt.cadastro);
 }

@@ -4,6 +4,7 @@ $('head').append('<meta charset="utf-8" />');
 $('head').append('<meta name="format-detection" content="telephone=no" />');
 $('head').append('<meta name="msapplication-tap-highlight" content="no" />');
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />');
+$('head').append('<script src="js/sistema/function_get_url_param.js" ></script>');
 $('head').append('<script src="js/sistema/functions_language.js" ></script>');
 $('head').append('<script src="js/sistema/language.js"></script>');
 $('head').append('<script src="js/sistema/menus.js" ></script>');
@@ -26,6 +27,7 @@ $('head').append('<script src="js/sistema/auto_languages.js" ></script>');
 $('head').append('<script src="library/validator/jquery.validate.min.js"></script>');
 $('head').append('<script src="library/validator/localization/messages_pt_BR.js"></script>');
 $('head').append('<script src="js/sistema/custom-validation.js" ></script>');
+$('head').append('<script src="js/sistema/breadcrumb.js" ></script>');
 
 $(function() {
 	$('head').append('<script src="assets/js/bootstrap.min.js"></script>');

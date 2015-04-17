@@ -61,3 +61,10 @@ label.error {
 .ui-table-reflow tbody tr:first-child th:first-child {
     margin-top: 0;
 }
+
+#page-wrapper .breadcrumb {
+    margin-bottom: 5px;
+}
+#titulo_pagina {
+    margin-bottom: 25px;
+}

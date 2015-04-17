@@ -19,6 +19,9 @@ $(function () {
                 $("#usu_login").val(retorno.registro.usu_login);
             }
         }, 'json');
+        
+        $("#usu_senha").removeAttr("required");
+        $("#confirm_usu_senha").removeAttr("required");
     } else {
         define_titulo(txt.usuarios_cadastro_titulo);
         add_breadcrumb_item(txt.usuarios_cadastro_titulo);
@@ -30,8 +33,13 @@ $(function () {
         if ($(this).valid()) {
             $.post(ajax, $(this).serialize(), function (retorno) {
                 if (erro_verificacao(retorno)) {
-                    alert(txt.cadastrado_sucesso);
-                    limpar_form();
+                    if(usu_id === undefined) {
+                        alert(txt.cadastrado_sucesso);
+                        limpar_form();
+                    } else {
+                        alert(txt.alteracao_sucesso);
+                        document.location = "usuarios_lista.html";
+                    }
                 }
             }, 'json');
         }
