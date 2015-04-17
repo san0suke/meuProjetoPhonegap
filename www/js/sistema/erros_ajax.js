@@ -21,8 +21,8 @@ function getMensagemErro(codErro) {
 function erro_verificacao(retorno) {
     if (retorno.erro !== undefined) {
         alert(getMensagemErro(retorno.erro));
-        if (retorno.erro === 3
-                || retorno === 6) {
+        if (retorno.erro == 3
+                || retorno == 6) {
             window.localStorage.removeItem("token");
             document.location = 'index.html';
         }

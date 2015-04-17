@@ -1,6 +1,8 @@
 $(function () {
     define_titulo(txt.usuarios_lista_titulo);
-    add_breadcrumb_item(txt.usuarios_lista_titulo);
+    add_breadcrumb_item(txt.cadastros);
+    add_breadcrumb_item(txt.usuarios);
+    add_breadcrumb_item(txt.listar);
 
     $.post(ajax, {a: "usuarios", b: "lista", token: window.localStorage.getItem("token")}, function (retorno) {
         if (erro_verificacao(retorno)) {

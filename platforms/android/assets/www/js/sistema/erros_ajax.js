@@ -11,7 +11,7 @@ function getMensagemErro(codErro) {
     listaErros[9] = txt.falha_editar;
     listaErros[10] = txt.id_nao_recebido;
     listaErros[11] = txt.falha_inativar;
-    if (listaErros[codErro] != undefined) {
+    if (listaErros[codErro] !== undefined) {
         return listaErros[codErro];
     } else {
         return txt.codigo_invalido + ": #" + codErro;
@@ -21,8 +21,8 @@ function getMensagemErro(codErro) {
 function erro_verificacao(retorno) {
     if (retorno.erro !== undefined) {
         alert(getMensagemErro(retorno.erro));
-        if (retorno.erro === 3
-                || retorno === 6) {
+        if (retorno.erro == 3
+                || retorno == 6) {
             window.localStorage.removeItem("token");
             document.location = 'index.html';
         }

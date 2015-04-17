@@ -4,6 +4,7 @@ var txt = {
     usuarios_cadastro_titulo: "Cadastro de Usuários",
     usuarios_edicao_titulo: "Edição de Usuários",
     usuarios_lista_titulo: "Lista de Usuários",
+    arquivo_upload_titulo: "Upload de arquivos",
     painel_login: "Painel de Login",
     login: "Login",
     senha: "Senha",
@@ -23,7 +24,7 @@ var txt = {
     num_visitas: "Núm. Vistas",
     sessao_expirada: "Sessão expirada. Por favor efetue o login novamente",
     cadastros: "Cadastros",
-    usuarios: "Usuarios",
+    usuarios: "Usuários",
     novo: "Novo",
     cadastro: "Cadastro",
     listar: "Listar",
@@ -92,5 +93,6 @@ var txt = {
     id : "ID",
     opcoes : "Opcões",
     id_nao_recebido : "ID não recebido. Tente novamente mais tarde",
+    arquivos_upload : "Upload",
 //	 : "",
 };

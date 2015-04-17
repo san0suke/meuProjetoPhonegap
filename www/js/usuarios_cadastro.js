@@ -4,8 +4,10 @@ $(function () {
     
     if(usu_id !== undefined) {
         define_titulo(txt.usuarios_edicao_titulo);
-        add_breadcrumb_item(txt.usuarios_lista_titulo, "usuarios_lista.html");
-        add_breadcrumb_item(txt.usuarios_edicao_titulo);
+        add_breadcrumb_item(txt.cadastros);
+        add_breadcrumb_item(txt.usuarios);
+        add_breadcrumb_item(txt.listar, "usuarios_lista.html");
+        add_breadcrumb_item(txt.cadastro);
         urlToForm();
         $("#b").val("edicao");
         
@@ -24,6 +26,8 @@ $(function () {
         $("#confirm_usu_senha").removeAttr("required");
     } else {
         define_titulo(txt.usuarios_cadastro_titulo);
+        add_breadcrumb_item(txt.cadastros);
+        add_breadcrumb_item(txt.usuarios);
         add_breadcrumb_item(txt.usuarios_cadastro_titulo);
         validar_token();
     }
