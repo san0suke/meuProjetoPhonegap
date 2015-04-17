@@ -34,6 +34,7 @@ var txt = {
     falha_registrar_token: "Ocorrem problemas durante ao registrar sua sessão. Tente novamente mais tarde",
     carregando: "Carregando",
     falha_cadastrar: "Falha ao cadastrar. Tente novamente mais tarde",
+    falha_editar: "Falha ao editar. Tente novamente mais tarde",
     redigite_senha: "Redigite a senha acima",
     confirmar_senha: "Confirmar senha",
     redigitar_senha: "As senhas digitadas não conferem",
@@ -85,5 +86,6 @@ var txt = {
     },
     id : "ID",
     opcoes : "Opcões",
+    id_nao_recebido : "ID não recebido. Tente novamente mais tarde",
 //	 : "",
 };

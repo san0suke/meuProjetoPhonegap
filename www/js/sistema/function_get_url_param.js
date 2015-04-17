@@ -21,3 +21,8 @@ function urlToForm() {
         $("form").prepend("<input type='hidden' name='"+sParameterName[0]+"' value='"+sParameterName[1]+"' />");
     }
 }
+
+function menuItemActive() {
+    var fileName = window.location.href.match('/([^/]*?)(\.[^\./]*)?$')[1];
+    $("#main-menu a[href='"+fileName+".html']").addClass("active-menu");
+}
