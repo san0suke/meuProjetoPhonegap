@@ -8,7 +8,7 @@ $(function () {
 
 });
 function table_load() {
-    $('.table').dataTable({            
-        "language": txt.dataTable   
+    $('.table').dataTable({
+        "language": txt.dataTable
     });
 }

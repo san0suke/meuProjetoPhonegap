@@ -1,4 +1,4 @@
 function logout() {
-	window.localStorage.removeItem("token");
-	document.location = "index.html";
+    window.localStorage.removeItem("token");
+    document.location = "index.html";
 }

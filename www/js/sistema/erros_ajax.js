@@ -11,6 +11,7 @@ function getMensagemErro(codErro) {
     listaErros[9] = txt.falha_editar;
     listaErros[10] = txt.id_nao_recebido;
     listaErros[11] = txt.falha_inativar;
+    listaErros[12] = txt.falha_upload;
     if (listaErros[codErro] !== undefined) {
         return listaErros[codErro];
     } else {

@@ -1,6 +1,6 @@
 function define_titulo(text) {
     document.title = text;
-    if($("#titulo_pagina").length > 0) {
+    if ($("#titulo_pagina").length > 0) {
         $("#titulo_pagina").html(text);
     }
 }

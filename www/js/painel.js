@@ -1,3 +1,3 @@
-$(function(){
-	define_titulo(txt.painel_titulo);
+$(function () {
+    define_titulo(txt.painel_titulo);
 });

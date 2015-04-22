@@ -11,8 +11,8 @@ $(function () {
                         '<th><b class="ui-table-cell-label">' + txt.id + ':</b>' + value.usu_id + '</th>' +
                         '<td><b class="ui-table-cell-label">' + txt.login + ':</b>' + value.usu_login + '</td>' +
                         '<td><b class="ui-table-cell-label">' + txt.opcoes + ':</b>' +
-                        '<a class="btn btn-primary" href="usuarios_cadastro.html?usu_id=' + value.usu_id + '">Editar</a> ' +
-                        '<a class="btn btn-danger inativar" usu_id="' + value.usu_id + '">Deletar</a></td>' +
+                        '<a class="btn btn-primary" href="usuarios_cadastro.html?usu_id=' + value.usu_id + '">' + txt.editar + '</a> ' +
+                        '<a class="btn btn-danger inativar" usu_id="' + value.usu_id + '">' + txt.deletar + '</a></td>' +
                         '</tr>');
             });
 
