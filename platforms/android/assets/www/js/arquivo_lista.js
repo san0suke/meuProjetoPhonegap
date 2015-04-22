@@ -1,4 +1,6 @@
 $(function () {
+    document.addEventListener("deviceready", onDeviceReady, false);
+    
     define_titulo(txt.arquivo_lista_titulo);
     add_breadcrumb_item(txt.cadastros);
     add_breadcrumb_item(txt.arquivos_upload);
@@ -12,19 +14,22 @@ $(function () {
                         '<td><b class="ui-table-cell-label">' + txt.opcoes + ':</b>' +
                         '<a class="btn btn-primary" href="'+ajax+'?a=arquivos&b=download&token='+
                         window.localStorage.getItem("token")+'&arquivo=' + value + '">' + txt.download + '</a> ' +
-                        '<a class="btn btn-danger inativar" arquivo="' + value + '">' + txt.deletar + '</a></td>' +
+                        '<a class="btn btn-danger deletar" arquivo="' + value + '">' + txt.deletar + '</a></td>' +
                         '</tr>');
             });
 
             table_load();
-            inativar_usuario();
+            deletar_arquivo();
         }
     }, 'json');
 });
-function inativar_usuario() {
-    $(".inativar").click(function () {
+function onDeviceReady() {
+    alert("oi");
+}
+function deletar_arquivo() {
+    $(".deletar").click(function () {
         if (confirm(txt.confirmar_delecao)) {
-            $.post(ajax, {usu_id: $(this).attr("usu_id"), a: "usuarios", b: "inativar", token: window.localStorage.getItem("token")}, function (retorno) {
+            $.post(ajax, {usu_id: $(this).attr("usu_id"), a: "arquivos", b: "deletar", token: window.localStorage.getItem("token")}, function (retorno) {
                 if (erro_verificacao(retorno)) {
                     alert(txt.deletado_sucesso);
                     document.location.reload();
