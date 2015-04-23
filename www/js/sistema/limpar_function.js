@@ -7,4 +7,5 @@ $(function () {
 function limpar_form() {
     $("input[type=text]").val("");
     $("input[type=password]").val("");
+    $("input[type=file]").val("");
 }

@@ -21,7 +21,7 @@ $(function () {
                 success: function (retorno) {
                     if (erro_verificacao(retorno)) {
                         alert(txt.cadastrado_sucesso);
-                        document.location.reload();
+                        limpar_form();
                     }
                 }
             });

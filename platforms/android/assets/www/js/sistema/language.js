@@ -101,4 +101,8 @@ var txt = {
     editar: "Editar",
     deletar: "Deletar",
     download: "Download",
+    download_sucesso: "Download concluído com sucesso",
+    download_falha: "Falha ao tentar realizar o download",
+    memoria_falha: "Falha ao tentar acessar o armazenamento do dispotivo",
+    falha_deletar: "Falha ao tentar deletar o arquivo. Tente novamente mais tarde",
 };

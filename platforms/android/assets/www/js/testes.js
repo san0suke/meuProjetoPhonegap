@@ -1,3 +1,4 @@
+var fileSys;
 function onDeviceReady() {
     alert("device is ready");
     window.requestFileSystem = window.requestFileSystem || window.webkitRequestFileSystem;
@@ -10,12 +11,12 @@ function fail() {
 
 function gotFS(fileSystem) {
     alert("got filesystem");
-
+    fileSys = fileSystem;
     // save the file system for later access
     alert(fileSystem.root.fullPath);
     window.rootFS = fileSystem.root;
-    downloadImage(fileSystem, "http://www.aerosiq.com.br/projetoPHP/ajax.php?a=arquivos&b=download&token=326ef7112503355ccf883cfdf1e76649&arquivo=22-04-2015_02-05-34_tutorialCordova.txt","teste2.txt");
-//    downloadImage(fileSystem, "http://www.aerosiq.com.br/wp-content/uploads/logo_2.png","logo_2.png");
+//    downloadImage(fileSystem, "http://www.aerosiq.com.br/projetoPHP/ajax.php?a=arquivos&b=download&token=326ef7112503355ccf883cfdf1e76649&arquivo=22-04-2015_02-05-34_tutorialCordova.txt","teste2.txt");
+    downloadImage(fileSystem, "http://www.aerosiq.com.br/wp-content/uploads/logo_2.png","logo_2.png");
 }
 
 function downloadImage(fileSystem, url, fileName) {
@@ -23,7 +24,7 @@ function downloadImage(fileSystem, url, fileName) {
     ft.download(
             url,
 //            window.rootFS.fullPath + "/" + fileName,
-            fileSystem.root.toURL() + '/Download/' + fileName,
+            fileSys.root.toURL() + 'Download/' + fileName,
             function (entry) {
                 alert("download complete: " + entry.fullPath);
 
