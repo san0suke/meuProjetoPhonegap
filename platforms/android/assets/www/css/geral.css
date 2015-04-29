@@ -68,3 +68,8 @@ label.error {
 .table td {
     word-break: break-all;
 }
+#iniDiv {
+    color: #428bca;
+    font-weight: bolder;
+    font-style: italic;
+}

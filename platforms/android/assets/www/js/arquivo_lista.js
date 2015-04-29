@@ -1,4 +1,5 @@
-$(function () {
+$(function(){ini()});
+function iniApp() {
     define_titulo(txt.arquivo_lista_titulo);
     add_breadcrumb_item(txt.cadastros);
     add_breadcrumb_item(txt.arquivos_upload);
@@ -22,8 +23,7 @@ $(function () {
             document.addEventListener("deviceready", onDeviceReady, false);
         }
     }, 'json');
-});
-
+}
 function onDeviceReady() {
     $(".download_btn").attr("href", "#");
     $(".download_btn").click(function () {

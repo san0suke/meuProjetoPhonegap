@@ -5,7 +5,6 @@ $(function () {
     $('head').append('<script src="library/jquery_mobile/jquery.mobile.custom.min.js" ></script>');
     $('head').append('<script src="assets/js/dataTables/jquery.dataTables.js"></script>');
     $('head').append('<script src="assets/js/dataTables/dataTables.bootstrap.js"></script>');
-
 });
 function table_load() {
     $('.table').dataTable({

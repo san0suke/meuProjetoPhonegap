@@ -1,4 +1,5 @@
-$(function () {
+$(function(){ini()});
+function iniApp() {
     define_titulo(txt.arquivo_upload_titulo);
     add_breadcrumb_item(txt.cadastros);
     add_breadcrumb_item(txt.arquivos_upload);
@@ -21,11 +22,10 @@ $(function () {
                 success: function (retorno) {
                     if (erro_verificacao(retorno)) {
                         alert(txt.cadastrado_sucesso);
-                        document.location.reload();
+                        limpar_form();
                     }
                 }
             });
         }
     });
-
-});
+}

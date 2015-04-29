@@ -29,6 +29,8 @@ $('head').append('<script src="library/validator/jquery.validate.min.js"></scrip
 $('head').append('<script src="library/validator/localization/messages_pt_BR.js"></script>');
 $('head').append('<script src="js/sistema/custom-validation.js" ></script>');
 $('head').append('<script src="js/sistema/breadcrumb.js" ></script>');
+$('head').append('<script src="js/sistema/functions.js" ></script>');
+$('head').append('<script src="js/sistema/movel_functions.js" ></script>');
 
 $(function () {
     $('head').append('<script src="assets/js/bootstrap.min.js"></script>');

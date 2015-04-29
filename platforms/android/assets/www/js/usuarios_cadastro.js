@@ -1,4 +1,5 @@
-$(function () {
+$(function(){ini()});
+function iniApp() {
     text_placeholder("#usu_login", txt.login);
     var usu_id = getUrlParameter('usu_id');
 
@@ -49,4 +50,4 @@ $(function () {
         }
         e.preventDefault();
     });
-});
+}

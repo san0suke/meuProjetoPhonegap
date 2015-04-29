@@ -1,4 +1,5 @@
-$(function () {
+$(function(){ini()});
+function iniApp() {
     define_titulo(txt.usuarios_lista_titulo);
     add_breadcrumb_item(txt.cadastros);
     add_breadcrumb_item(txt.usuarios);
@@ -20,7 +21,7 @@ $(function () {
             inativar_usuario();
         }
     }, 'json');
-});
+}
 function inativar_usuario() {
     $(".inativar").click(function () {
         if (confirm(txt.confirmar_delecao)) {
